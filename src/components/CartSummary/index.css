@@ -1,0 +1,45 @@
+.dish-summary-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  margin-right: 116px;
+}
+
+.dish-summary-rupee-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0px;
+  color: #3e4c59;
+  margin-top: 20px;
+}
+
+.item-total-cost-icon {
+  margin-top: 3px;
+}
+
+.place-order-button {
+  width: Hug (99px);
+  height: Hug (32px);
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px;
+  gap: 8px;
+  background-color: #f7931e;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 33px;
+}

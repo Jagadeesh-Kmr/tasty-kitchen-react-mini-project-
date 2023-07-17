@@ -1,0 +1,13 @@
+.react-slider-container {
+  text-align: center;
+  width: 1440px;
+  height: 530px;
+}
+
+.slider-img {
+  width: 1110px;
+  height: 320px;
+  border-radius: 8px;
+  margin-left: 130px;
+  margin-top: 50px;
+}
