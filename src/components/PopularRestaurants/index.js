@@ -188,18 +188,18 @@ class PopularRestaurants extends Component {
     return (
       <>
         <div className="restaurant-sortBy-container">
-          <p className="popular-restaurants-heading">Popular Restaurants</p>
-          <div className="restaurant-sort-by-container">
+          <div className="restaurant-sorting-container">
+            <h1 className="popular-restaurants-heading">Popular Restaurants</h1>
             <p className="popular-restaurant-desc">
               Select Your favourite restaurant special dish and make your day
               happy...
             </p>
             {this.renderSortByOptions()}
+            <hr className="popular-restaurant-underline" />
           </div>
-          <hr className="popular-restaurant-underline" />
-        </div>
-        <div className="restaurants-name-container">
-          {this.renderRestaurantsNameView()}
+          <div className="restaurants-name-container">
+            {this.renderRestaurantsNameView()}
+          </div>
         </div>
       </>
     )

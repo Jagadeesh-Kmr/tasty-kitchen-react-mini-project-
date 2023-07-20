@@ -40,23 +40,25 @@ const SortByOption = props => {
           />
           <BsSearch className="search-icon" />
         </div>
-        <BsFilterRight className="sort-by-icon" />
-        <p className="sort-by">Sort by</p>
-        <select
-          className="sort-by-select"
-          value={activeOptionValue}
-          onChange={onChangeSortVal}
-        >
-          {sortByOptions.map(eachOption => (
-            <option
-              key={eachOption.id}
-              value={eachOption.value}
-              className="select-option"
-            >
-              {eachOption.displayText}
-            </option>
-          ))}
-        </select>
+        <div className="sort-by-option-container">
+          <BsFilterRight className="sort-by-icon" />
+          <p className="sort-by">Sort by</p>
+          <select
+            className="sort-by-select"
+            value={activeOptionValue}
+            onChange={onChangeSortVal}
+          >
+            {sortByOptions.map(eachOption => (
+              <option
+                key={eachOption.id}
+                value={eachOption.value}
+                className="select-option"
+              >
+                {eachOption.displayText}
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
     </>
   )

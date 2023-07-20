@@ -44,7 +44,7 @@ const CartListView = () => (
                   className="remove-all-btn"
                   onClick={onclickRemoveCartItems}
                 >
-                  Remove All
+                  Remove Items
                 </button>
                 <hr className="cart-hr-line" />
                 <div className="order-total-container">

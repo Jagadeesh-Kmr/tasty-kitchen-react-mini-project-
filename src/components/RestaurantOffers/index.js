@@ -4,8 +4,6 @@ import Loader from 'react-loader-spinner'
 import Cookies from 'js-cookie'
 import Slider from 'react-slick'
 
-import Header from '../Header'
-
 import './index.css'
 
 const apiStatusConstants = {
@@ -100,7 +98,6 @@ class RestaurantsOffers extends Component {
     return (
       <>
         <div className="restaurants-container col-12 col-md-4">
-          <Header />
           {this.renderSliderImgsView()}
         </div>
       </>
