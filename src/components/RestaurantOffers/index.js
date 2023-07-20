@@ -99,7 +99,7 @@ class RestaurantsOffers extends Component {
   render() {
     return (
       <>
-        <div className="react-slider-container">
+        <div className="restaurants-container col-12 col-md-4">
           <Header />
           {this.renderSliderImgsView()}
         </div>

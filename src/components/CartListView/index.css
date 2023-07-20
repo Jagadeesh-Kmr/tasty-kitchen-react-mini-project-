@@ -4,7 +4,7 @@
 
 .cart-bg-container {
   width: 1110px;
-  min-height: 740px;
+  background-size: cover;
   top: 144px;
   left: 165px;
   background: linear-gradient(
@@ -14,6 +14,8 @@
     ),
     linear-gradient(0deg, #f9fbfe, #f9fbfe);
   border: 1px solid #0b69ff1a;
+  padding-bottom: 30px;
+  padding-bottom: 30px;
   margin-left: 150px;
   margin-top: 30px;
   margin-bottom: 30px;

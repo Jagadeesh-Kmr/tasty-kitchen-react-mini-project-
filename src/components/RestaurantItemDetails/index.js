@@ -120,7 +120,7 @@ class RestaurantItemDetails extends Component {
           </div>
         </div>
 
-        <div className="restaurant-item-container">
+        <div className="restaurant-item-container col-12 col-md-4">
           <ul className="restaurant-ul">
             {restaurantItems.map(restaurantItem => (
               <RestaurantItemsView

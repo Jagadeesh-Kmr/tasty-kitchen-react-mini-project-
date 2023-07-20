@@ -37,7 +37,6 @@
 
 .restaurant-sort-by-container {
   display: flex;
-  justify-content: space-between;
   width: 1100px;
   margin: 0;
   color: #475569;
@@ -60,6 +59,7 @@
   justify-content: center;
   align-items: center;
   width: 1420px;
+  height: 530px;
   flex-wrap: wrap;
 }
 

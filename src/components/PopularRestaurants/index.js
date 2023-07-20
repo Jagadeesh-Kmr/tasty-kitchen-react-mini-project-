@@ -33,6 +33,7 @@ class PopularRestaurants extends Component {
     restaurantNames: [],
     apiStatus: apiStatusConstants.initial,
     activeOptionValue: sortByOptions[0].value,
+    searchInput: '',
     totalPages: 0,
     activePage: 1,
   }
@@ -45,11 +46,11 @@ class PopularRestaurants extends Component {
     this.setState({
       apiStatus: apiStatusConstants.inProgress,
     })
-    const {activePage, activeOptionValue} = this.state
+    const {activePage, activeOptionValue, searchInput} = this.state
     const jwtToken = Cookies.get('jwt_token')
     const limit = 9
     const offset = (activePage - 1) * limit
-    const apiUrl = `https://apis.ccbp.in/restaurants-list?offset=${offset}&limit=${limit}&sort_by_rating=${activeOptionValue}`
+    const apiUrl = `https://apis.ccbp.in/restaurants-list?offset=${offset}&limit=${limit}&search=${searchInput}&sort_by_rating=${activeOptionValue}&`
     const options = {
       headers: {
         Authorization: `Bearer ${jwtToken}`,
@@ -106,7 +107,7 @@ class PopularRestaurants extends Component {
 
     return (
       <>
-        <div className="restaurant-name-details-container">
+        <div className="restaurant-name-details-container ">
           <ul className="restaurant-name-ul">
             {restaurantNames.map(eachData => (
               <RestaurantNames key={eachData.id} restaurantName={eachData} />
@@ -139,12 +140,23 @@ class PopularRestaurants extends Component {
   onChangeOption = activeOptionValue =>
     this.setState({activeOptionValue}, this.getRestaurantsName)
 
+  onChangeSearchInput = searchInput => {
+    this.setState({searchInput}, this.getRestaurantsName)
+  }
+
+  onEnterSearchInput = () => {
+    this.getRestaurantsName()
+  }
+
   renderSortByOptions = () => {
-    const {activeOptionValue} = this.state
+    const {activeOptionValue, searchInput} = this.state
 
     return (
       <>
         <SortByOption
+          searchInput={searchInput}
+          onChangeSearchInput={this.onChangeSearchInput}
+          onenterSearchInput={this.onEnterSearchInput}
           sortByOptions={sortByOptions}
           activeOptionValue={activeOptionValue}
           onChangeOption={this.onChangeOption}

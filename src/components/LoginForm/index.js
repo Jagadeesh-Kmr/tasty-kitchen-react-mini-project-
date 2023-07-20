@@ -56,16 +56,20 @@ class LoginForm extends Component {
 
     return (
       <>
-        <label className="input-label" htmlFor="password">
-          PASSWORD
-        </label>
-        <input
-          type="password"
-          id="password"
-          className="password-input-field"
-          value={password}
-          onChange={this.onChangePassword}
-        />
+        <div>
+          <label className="input-label" htmlFor="password">
+            PASSWORD
+          </label>
+        </div>
+        <div>
+          <input
+            type="password"
+            id="password"
+            className="input-field"
+            value={password}
+            onChange={this.onChangePassword}
+          />
+        </div>
       </>
     )
   }
@@ -75,16 +79,20 @@ class LoginForm extends Component {
 
     return (
       <>
-        <label className="input-label" htmlFor="username">
-          USERNAME
-        </label>
-        <input
-          type="text"
-          id="username"
-          className="username-input-field"
-          value={username}
-          onChange={this.onChangeUsername}
-        />
+        <div>
+          <label className="input-label" htmlFor="username">
+            USERNAME
+          </label>
+        </div>
+        <div>
+          <input
+            type="text"
+            id="username"
+            className="input-field"
+            value={username}
+            onChange={this.onChangeUsername}
+          />
+        </div>
       </>
     )
   }
@@ -99,6 +107,11 @@ class LoginForm extends Component {
 
     return (
       <div className="login-form-container">
+        <img
+          src="https://res.cloudinary.com/dakmxu3dl/image/upload/v1688402077/Rectangle_1456_kitchenImg_mnkoox.png"
+          className="login-mobile-img"
+          alt="website login"
+        />
         <form className="form-container" onSubmit={this.submitForm}>
           <img
             src="https://res.cloudinary.com/dakmxu3dl/image/upload/v1688404056/Group_7420kitchenLogo_vfwpue.png"
@@ -111,7 +124,7 @@ class LoginForm extends Component {
           <div className="input-container">{this.renderPasswordField()}</div>
           {showSubmitError && <p className="error-message">{errorMsg}</p>}
           <div>
-            <button type="submit" className="login-button">
+            <button type="submit" className="login-btn">
               Login
             </button>
           </div>

@@ -10,7 +10,7 @@ const RestaurantNames = props => {
   return (
     <>
       <Link to={`/restaurant/${id}`} className="link">
-        <li className="restaurant-names-li">
+        <li className="restaurant-names-li ">
           <div className="restaurant-names-container">
             <img
               src={imageUrl}
@@ -19,7 +19,7 @@ const RestaurantNames = props => {
             />
             <div className="restaurants-desc-container">
               <div>
-                <p className="restaurant-name">{name}</p>
+                <h1 className="restaurant-name">{name}</h1>
               </div>
               <p className="restaurant-cuisine">{cuisine}</p>
               <div className="restaurant-ratings-container">
