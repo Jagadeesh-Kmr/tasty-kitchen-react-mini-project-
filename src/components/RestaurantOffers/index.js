@@ -1,6 +1,5 @@
 import {Component} from 'react'
 
-import Loader from 'react-loader-spinner'
 import Cookies from 'js-cookie'
 import Slider from 'react-slick'
 
@@ -9,7 +8,6 @@ import './index.css'
 const apiStatusConstants = {
   initial: 'INITIAL',
   success: 'SUCCESS',
-  inProgress: 'IN_PROGRESS',
 }
 
 class RestaurantsOffers extends Component {
@@ -75,18 +73,12 @@ class RestaurantsOffers extends Component {
     )
   }
 
-  renderLoadingView = () => (
-    <div className="loader-container" data-testid="loader">
-      <Loader type="ThreeDots" color="#F7931E" height="50" width="50" />
-    </div>
-  )
-
   renderSliderImgsView = () => {
     const {apiStatus} = this.state
 
     switch (apiStatus) {
       case apiStatusConstants.inProgress:
-        return this.renderLoadingView()
+        return null
       case apiStatusConstants.success:
         return this.renderSuccessView()
       default:

@@ -1,73 +1,134 @@
-.cart-bg-container {
-  width: 1110px;
-  background-size: cover;
-  top: 144px;
-  left: 165px;
-  background: linear-gradient(
-      0deg,
-      rgba(11, 105, 255, 0.1),
-      rgba(11, 105, 255, 0.1)
-    ),
-    linear-gradient(0deg, #f9fbfe, #f9fbfe);
-  border: 1px solid #0b69ff1a;
-  padding-bottom: 30px;
-  padding-bottom: 30px;
-  margin-left: 150px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+@media screen and (max-width: 768px) {
+  .cart-bg-container {
+    width: 760px;
+    height: 1010px;
+    background-size: cover;
+    top: 144px;
+    left: 165px;
+    padding-bottom: 30px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .cart-container {
+    display: none;
+  }
+
+  .cart-hr-line {
+    width: 760px;
+    top: 480px;
+    left: 213px;
+    border: 1px;
+    border: 1px solid #cbd2d9;
+    margin-top: 30px;
+  }
+
+  .remove-all-btn {
+    border: 1px solid #f7931e;
+    background-color: transparent;
+    color: #f7931e;
+    font-family: 'Roboto';
+    font-size: 15px;
+    border-radius: 8px;
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 16px;
+    margin-left: 540px;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .order-total-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .order-total-para {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #3e4c59;
+    margin-left: 81px;
+  }
 }
 
-.cart-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-family: DM Sans;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.20000000298023224px;
-  text-align: left;
-  color: #475569;
-}
+@media screen and (min-width: 768px) {
+  .cart-bg-container {
+    width: 1110px;
+    background-size: cover;
+    top: 144px;
+    left: 165px;
+    background: linear-gradient(
+        0deg,
+        rgba(11, 105, 255, 0.1),
+        rgba(11, 105, 255, 0.1)
+      ),
+      linear-gradient(0deg, #f9fbfe, #f9fbfe);
+    border: 1px solid #0b69ff1a;
+    padding-bottom: 30px;
+    padding-bottom: 30px;
+    margin-left: 150px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 
-.cart-hr-line {
-  width: 1061px;
-  top: 480px;
-  left: 213px;
-  border: 1px;
-  border: 1px solid #cbd2d9;
-  margin-top: 30px;
-}
+  .cart-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: DM Sans;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #475569;
+  }
 
-.remove-all-btn {
-  border: 1px solid #f7931e;
-  background-color: transparent;
-  color: #f7931e;
-  font-family: 'Roboto';
-  font-size: 15px;
-  border-radius: 8px;
-  padding-left: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 16px;
-  margin-left: 890px;
-  outline: none;
-  cursor: pointer;
-}
+  .cart-hr-line {
+    width: 1061px;
+    top: 480px;
+    left: 213px;
+    border: 1px;
+    border: 1px solid #cbd2d9;
+    margin-top: 30px;
+  }
 
-.order-total-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  .remove-all-btn {
+    border: 1px solid #f7931e;
+    background-color: transparent;
+    color: #f7931e;
+    font-family: 'Roboto';
+    font-size: 15px;
+    border-radius: 8px;
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 16px;
+    margin-left: 890px;
+    outline: none;
+    cursor: pointer;
+  }
 
-.order-total-para {
-  font-family: Roboto;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 32px;
-  letter-spacing: 0px;
-  text-align: left;
-  color: #3e4c59;
-  margin-left: 81px;
+  .order-total-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .order-total-para {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #3e4c59;
+    margin-left: 81px;
+  }
 }

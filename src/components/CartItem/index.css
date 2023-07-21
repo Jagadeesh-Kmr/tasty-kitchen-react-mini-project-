@@ -1,73 +1,176 @@
+@media screen and (max-width: 768px) {
+  .cart-list-container {
+    margin-bottom: 30px;
+  }
+
+  .mobile-dish-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile-dish-img {
+    width: 136px;
+    height: 90px;
+    top: 96px;
+    left: 24px;
+    border-radius: 8px;
+  }
+
+  .dish-img-container {
+    display: flex;
+    align-items: center;
+    width: 260px;
+  }
+
+  .dish-img {
+    display: none;
+  }
+
+  .mobile-item-names-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 195px;
+    height: 88px;
+    top: 97px;
+    left: 176px;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #183b56;
+    margin: 0;
+    padding: 0;
+  }
+
+  .dish-name {
+    display: none;
+  }
+
+  .mobile-dish-quantity-container {
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+    margin-bottom: -10px;
+  }
+
+  .dish-quantity-container {
+    display: none;
+  }
+
+  .quantity-controller-button {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .dish-quantity {
+    color: #52606d;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 500;
+    margin: 8px;
+    line-height: 1.3;
+  }
+
+  .mobile-dish-cost-container {
+    display: flex;
+    align-items: center;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #ffa412;
+  }
+
+  .dish-cost-container {
+    display: none;
+  }
+}
+
 .cart-list {
   list-style-type: none;
 }
 
-.cart-list-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 850px;
-  margin-bottom: 30px;
-  margin-left: 80px;
-}
+@media screen and (min-width: 768px) {
+  .cart-list-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 850px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+  }
 
-.dish-img-container {
-  display: flex;
-  align-items: center;
-  width: 260px;
-}
+  .dish-img-container {
+    display: flex;
+    align-items: center;
+    width: 260px;
+  }
 
-.dish-img {
-  width: 136px;
-  height: 100px;
-  top: 224px;
-  left: 213px;
-  border-radius: 8px;
-  margin-right: 11px;
-}
+  .dish-img {
+    width: 136px;
+    height: 100px;
+    top: 224px;
+    left: 213px;
+    border-radius: 8px;
+    margin-right: 11px;
+  }
 
-.dish-name {
-  font-family: DM Sans;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.20000000298023224px;
-  text-align: left;
-  color: #183b56;
-}
+  .dish-name {
+    font-family: DM Sans;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #183b56;
+  }
 
-.dish-quantity-container {
-  display: flex;
-  align-items: center;
-  margin-left: -130px;
-}
+  .dish-quantity-container {
+    display: flex;
+    align-items: center;
+    margin-left: -130px;
+  }
 
-.quantity-controller-button {
-  padding: 0;
-  border: 0;
-  background-color: transparent;
-  outline: none;
-  cursor: pointer;
-}
+  .quantity-controller-button {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+  }
 
-.dish-quantity {
-  color: #52606d;
-  font-family: 'Roboto';
-  font-size: 12px;
-  font-weight: 500;
-  margin: 8px;
-  line-height: 1.3;
-}
+  .dish-quantity {
+    color: #52606d;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 500;
+    margin: 8px;
+    line-height: 1.3;
+  }
 
-.dish-cost-container {
-  display: flex;
-  align-items: center;
-  font-family: DM Sans;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0px;
-  text-align: left;
-  margin-right: -15px;
-  color: #ffa412;
+  .dish-cost-container {
+    display: flex;
+    align-items: center;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-right: -15px;
+    color: #ffa412;
+  }
+
+  .mobile-dish-container {
+    display: none;
+  }
 }
