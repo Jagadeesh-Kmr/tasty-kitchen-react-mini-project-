@@ -11,7 +11,7 @@
     
      ● UsedFigmamockups to implement UI-rich and pixel-perfect React components.
     
-     ● Usedfetch to call REST APIs for popular restaurants with sort by, specific restaurant details.
+     ● Used fetch to call REST APIs for popular restaurants with sort by, specific restaurant details.
     
      ● Implemented username and password authentication and persisted login state using client storage.
     
