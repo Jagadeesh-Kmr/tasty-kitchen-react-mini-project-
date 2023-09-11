@@ -44,8 +44,5 @@
     - Users can select the Cart link in the navbar to view their selected Food items.
     - Each food item quantity and price will be displayed in the Cart list.
     - Users can increase or decrease their each food item quantity and the total price will automatically get updated.
-    - Users can remove all the food items by clicking on the Remove All button.
-   
-  - Logout Button
-    - Using Logout button. Users can logout from accounts page.
+    - Users can remove all the food items by clicking on Remove All button.
   
